@@ -1,0 +1,47 @@
+CAPÍTULO 2
+COMEÇANDO DE... Definições Compostas Sequenciais
+
+Estruturas Mutuamente Recursivas (Java) = dá loop infinito se criar o objeto dentro da classe (Ex.: new b dentro da classe A)
+
+CAPÍTULO 3
+TIPO INTEIRO
+Python: a representação é indicada no fim do número quando printado em tela no terminal. Aparece um 'L' para indicar quando
+ é vetor de dígitos, por exemplo.
+Em Java, o intervalo de int é definido na própria LP.
+Em C, o intervalo de int é definido no compilador, então muda de acordo com o Hardware.
+
+Definir na LP leva a perda de eficiência porque não dá pra fazer cálculos a nível de hardware caso o número precise de mais memória do que a
+máquina suporta. Nesse caso, os cálculos são feitos a nível de software (usando mais de uma célula de memória. Ex.: número de 32 bits em
+máquina de 16 bits será guardado em duas células de 16 bits).
+
+Por que C não tem tipo booleano? : Para permitir expressões como while (**q = ++q). Favorece redigibilidade e não confiabilidade.
+
+TIPO CARACTERE
+Para que os programas escritos em ASCII fossem compatíveis nos sistemas com UNICODE, fizeram com que os símbolos da ASCII tivessem a mesma
+representação numérica na UNICODE.
+
+TIPO PONTO FLUTUANTE
+Há um erro de representação porque o número é infinito e precisamos represetá-los em máquina finita. Logo, um intervalo de valores tem uma
+mesma representação.
+
+TIPO PONTO FIXO
+Gasta muita memória e tempo porque o processamento é feito em nível de software. Dá mais precisão no entanto -> importante para sistemas
+bancários (contagem de dinheiro)
+
+TIPO ENUMERADO
+C só aumenta a legibilidade porque os elementos são associados a números inteiros. Logo, se declarar uma enumeração de meses mas depois
+atribuir um número à variável de tipo enum, não dá erro porque a enumeração é de inteiros.
+Em ADA, dá erro. Então, aumenta legibilidade e confiabilidade.
+
+
+-------------------
+08/06
+TIPOS DE COMANDOS
+Desvios incondicionais: GOTO (em Fortran, Pascal e C)
+Muito perigoso porque pode pular para qualquer parte do programa. Foi cogitada a eliminação do GOTO das LPs, mas permanece nas LPs acima e em Java (embora não seja possível utilizar em Java)7ª
+Comandos de escape ©: break, continue, return
+
+CAPÍTULO 6 - Modularização
+DIREÇÃO DA PASSAGEM:
+Entrada e saída: passagem por referencia (entra um valor e a variável é modificada)
+Java: diferentes tipos de passagem de acordo os tipos do valor retornado (!)
